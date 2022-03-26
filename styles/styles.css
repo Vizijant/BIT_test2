@@ -1,0 +1,90 @@
+:root{
+    --bodycolor:#EEF3FA;
+    --containercolor:#FDFEFF;
+    --similar12:#E7E9FE;
+    --similar34:#DCE1FF;
+    --adrescolor:#C7CDFD;
+    --messagecolor:#A5B1FD;
+    --text:#434DB0;
+    --textbtn:#C5CBFE;
+    --btncolor:#223BF3;
+    --thenkscolor:#DAFCFA;
+    --bigdivcolor:#D1E2FC;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.containergrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.2fr 2fr 1.1fr;
+    gap: 10px;
+    
+}
+body{
+    background-color:var(--bodycolor);
+}
+body>div{
+    background-color:var(--containercolor);
+    width: 50%;
+    margin: 10% auto;
+    padding: 20px 40px;
+    border: 20px solid var(--bigdivcolor);
+    
+}
+h1{
+    color: var(--text);
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+input, textarea{
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.similar12{
+    background-color: var(--similar12);
+
+
+}
+.similar34{
+    background-color: var(--similar34);
+
+}
+.adresinput5{
+ grid-column: 1/3; 
+ background-color: var(--adrescolor);  
+}
+
+#messageinput6{
+    grid-column: 1/3;
+    background-color: var(--messagecolor);   
+}
+
+.containergrid :nth-child(7){
+    text-align: center;
+    margin: 10px;
+    grid-column: 1/3;
+}
+.button7{
+ background-color: var(--btncolor); 
+ color: var(--textbtn);
+ padding: 10px 50px ; 
+ border: #223BF3 solid 1px; 
+ border-radius: 50px;
+ cursor: pointer;
+ 
+}
+::placeholder{
+    color: var(--text);
+}
+.thanks8{
+    color: var(--thenkscolor);
+}
